@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "routes": [
+    {
+      "src": "/style.css",
+      "headers": { "content-type": "text/css" },
+      "dest": "/style.css"
+    },
+    {
+      "src": "/script.js",
+      "headers": { "content-type": "application/javascript" },
+      "dest": "/script.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
